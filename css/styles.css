@@ -405,6 +405,19 @@ address {
 .list-footer li:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.footer-text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+/*------------------------------ ICON FOOTER -----------------------------*/
+
 /* ---------------------------------------------------------------------- */
 /*----------------------------------PORTFOLIO-----------------------------*/
 .section {
