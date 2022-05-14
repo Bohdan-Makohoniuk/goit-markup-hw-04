@@ -57,6 +57,8 @@ button {
 }
 
 .section {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -76,6 +78,9 @@ button {
 
 /*------------------------------------logo-----------------------------*/
 .header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid#ECECEC;
 }
 .heder-container {
@@ -174,12 +179,20 @@ button {
 /*-----------------------------------"hero"----------------------------*/
 .hero {
   max-width: 1600px;
+  background-image: url(../images/hero-fon.jpg),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat;
 
-  background-color: var(--color-bg-hero);
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background-color: var(--color-bg-hero); */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
+
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -263,6 +276,8 @@ button {
 
 .section-team {
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -354,29 +369,56 @@ button {
 
 /*------------------------- ПОСТОЯННЫЕ КЛИЕНТЫ -------------------------*/
 .section-partners {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.company-link {
-  display: block;
+
+.list.company {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.partners:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
-
   border: 1px solid var(--icon);
   border-radius: 4px;
+}
+
+.company-link:hover .socials-icon,
+.company-link:focus .socials-icon {
+  fill: var(--accent-color);
+}
+
+.company-link:hover,
+.company-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /*---------------------------------footer---------------------------------*/
 .footer {
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--color-bg-hero);
   color: var(--primary-white-color);
 }
+
 .footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -418,6 +460,9 @@ address {
 
 /*------------------------------ ICON FOOTER -----------------------------*/
 
+.footer-socials {
+  display: flex;
+}
 /* ---------------------------------------------------------------------- */
 /*----------------------------------PORTFOLIO-----------------------------*/
 .section {
