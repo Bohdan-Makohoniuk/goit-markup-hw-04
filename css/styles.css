@@ -152,6 +152,8 @@ button {
 /*------------------------------auth-nav list------------------------*/
 
 .auth-nav .list {
+  display: flex;
+  align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -182,16 +184,15 @@ button {
 }
 
 .contact-icon {
-  display: inline-block;
+  fill: var(--icon);
   margin-right: 10px;
-  align-items: center;
 }
 
 /*-----------------------------------"hero"----------------------------*/
 .hero {
   max-width: 1600px;
-  background-image: url(../images/hero-fon.jpg),
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-fon.jpg);
   background-repeat: no-repeat;
 
   background-position: center;
@@ -248,21 +249,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.specifics-list:not(:last-child) {
-  margin-right: 30px;
-}
-
-.specifics-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.specifics-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*--------------------------------------- ICON up--------------------------- */
@@ -498,6 +493,15 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.conect {
+  margin-left: 70px;
 }
 
 /*------------------------------ ICON FOOTER -----------------------------*/
