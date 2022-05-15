@@ -5,6 +5,7 @@
   --primary-white-color: #ffffff;
   --color-bg-hero: #2f303a;
   --icon: #afb1b8;
+  --icon-last: #ffffff;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   /* or 24px */
   letter-spacing: 0.03em;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -159,10 +161,17 @@ button {
   letter-spacing: 0.02em;
   color: var(--primary-text-calor);
 }
+
 .list:hover,
 .list:focus {
   color: var(--accent-color);
 }
+
+.list:hover .contact-icon,
+.list:focus .contact-icon {
+  fill: var(--accent-color);
+}
+
 .contact-heder {
   display: flex;
   align-items: center;
@@ -172,8 +181,10 @@ button {
   fill: var(--accent-color);
 }
 
-.icon {
+.contact-icon {
+  display: inline-block;
   margin-right: 10px;
+  align-items: center;
 }
 
 /*-----------------------------------"hero"----------------------------*/
@@ -225,6 +236,37 @@ button {
 }
 
 /* ---------------------------------saction "особенности"------------------------ */
+
+.section-partners {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.specifics-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specifics-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.specifics-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+/*--------------------------------------- ICON up--------------------------- */
+
 .section-specifics {
   padding-top: 94px;
 }
@@ -463,6 +505,27 @@ address {
 .footer-socials {
   display: flex;
 }
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer .socials-icon {
+  fill: var(--icon-last);
+}
+
 /* ---------------------------------------------------------------------- */
 /*----------------------------------PORTFOLIO-----------------------------*/
 .section {
